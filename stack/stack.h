@@ -6,8 +6,15 @@
 /**@brief Struktur des Stacks.
  */
 typedef struct {
-    /* hier sollte noch etwas dazu kommen */
+    StackElem *first;
+    StackElem *last;
 } IntStack;
+
+typedef struct {
+    int value;
+    struct StackElem *next;
+    struct StackElem *prev;
+} StackElem;
 
 /* *** öffentliche Schnittstelle ******************************************** */
 
