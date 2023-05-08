@@ -5,16 +5,15 @@
 
 /**@brief Struktur des Stacks.
  */
-typedef struct {
-    StackElem *first;
-    StackElem *last;
-} IntStack;
-
-typedef struct {
+ typedef struct {
     int value;
     struct StackElem *next;
     struct StackElem *prev;
 } StackElem;
+
+typedef struct {
+    StackElem *first;
+} IntStack;
 
 /* *** öffentliche Schnittstelle ******************************************** */
 
